@@ -21,13 +21,3 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
-
-doctorcode:
-  name: DoctorCode
-  title: Développeur Full Stack
-  url: https://github.com/doctorcode
-  image_url: https://github.com/doctorcode.png
-  page: true
-  socials:
-    x: doctorcodex
-    github: doctorcode
