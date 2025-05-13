@@ -2,10 +2,127 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jordan-creyelman.github.io/mon-blog</id>
     <title>Mon Blog Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2025-05-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jordan-creyelman.github.io/mon-blog"/>
     <subtitle>Mon Blog Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[sqli]]></title>
+        <id>https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli</id>
+        <link href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli"/>
+        <updated>2025-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Voici un article en Markdown adapté pour être utilisé dans un site Docusaurus (par exemple dans le dossier docs/) sur le thème de SQL Injection (SQLi), couvrant :]]></summary>
+        <content type="html"><![CDATA[<p>Voici un article en <strong>Markdown</strong> adapté pour être utilisé dans un site <strong>Docusaurus</strong> (par exemple dans le dossier <code>docs/</code>) sur le thème de <strong>SQL Injection (SQLi)</strong>, couvrant :</p>
+<ul>
+<li>Définition</li>
+<li>Types</li>
+<li>Particularités selon les bases de données</li>
+<li>Techniques (commentaires, détection du nombre de colonnes, encodage WAF)</li>
+<li>Compatible pour une publication à la date du <strong>13 mai 2025</strong></li>
+</ul>
+<hr>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block punctuation" style="color:rgb(199, 146, 234)">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> Comprendre les SQL Injections (SQLi)</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">description</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> Un guide sur les types de SQLi</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token front-matter-block front-matter yaml language-yaml"> leur fonctionnement</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token front-matter-block front-matter yaml language-yaml"> les différences entre les bases de données</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token front-matter-block front-matter yaml language-yaml"> et les techniques de contournement.</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">slug</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> sqli</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">date</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml datetime number" style="color:rgb(247, 140, 108)">2025-05-13</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule">keywords</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml">  </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token front-matter-block front-matter yaml language-yaml"> sqli</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml">  </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token front-matter-block front-matter yaml language-yaml"> injection</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml">  </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token front-matter-block front-matter yaml language-yaml"> sécurité</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block front-matter yaml language-yaml">  </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token front-matter-block front-matter yaml language-yaml"> base de données</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:rgb(199, 146, 234)">---</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token title important punctuation" style="color:rgb(199, 146, 234)">#</span><span class="token title important"> Qu'est-ce qu'une SQL Injection (SQLi) ?</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">Une </span><span class="token bold punctuation" style="color:rgb(199, 146, 234)">**</span><span class="token bold content">SQL Injection</span><span class="token bold punctuation" style="color:rgb(199, 146, 234)">**</span><span class="token plain"> est une vulnérabilité qui permet à un attaquant d'injecter des requêtes SQL arbitraires dans l'application. Cela peut lui permettre d'accéder à des données sensibles, de modifier ou de supprimer des enregistrements, voire d'exécuter des commandes sur le serveur dans certains cas.</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">Exemple simple :</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">```sql</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">SELECT * FROM users WHERE username = '$username';</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Si l'utilisateur entre <code>' OR 1=1--</code>, la requête devient :</p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">SELECT</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">FROM</span><span class="token plain"> users </span><span class="token keyword" style="font-style:italic">WHERE</span><span class="token plain"> username </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">''</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">OR</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">--';</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Résultat : retour de tous les utilisateurs.</p>
+<hr>
+<h1>Types de SQLi</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-sqli-classique-in-band">1. <strong>SQLi classique (In-band)</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#1-sqli-classique-in-band" class="hash-link" aria-label="Direct link to 1-sqli-classique-in-band" title="Direct link to 1-sqli-classique-in-band">​</a></h2>
+<ul>
+<li><strong>Erreur visible ou réponse directe</strong></li>
+<li>Utilisation des opérateurs logiques (<code>OR</code>, <code>AND</code>) pour manipuler les résultats.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-blind-sqli">2. <strong>Blind SQLi</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#2-blind-sqli" class="hash-link" aria-label="Direct link to 2-blind-sqli" title="Direct link to 2-blind-sqli">​</a></h2>
+<ul>
+<li>
+<p>Le résultat n’est pas visible, mais on peut déduire des informations par les temps de réponse ou les erreurs.</p>
+<ul>
+<li><strong>Boolean-based</strong> : test vrai/faux.</li>
+<li><strong>Time-based</strong> : injection de fonctions comme <code>SLEEP()</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-out-of-band-sqli">3. <strong>Out-of-band SQLi</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#3-out-of-band-sqli" class="hash-link" aria-label="Direct link to 3-out-of-band-sqli" title="Direct link to 3-out-of-band-sqli">​</a></h2>
+<ul>
+<li>Exploitation via des canaux externes (ex. DNS ou HTTP).</li>
+<li>Rare, mais utile si les autres méthodes échouent.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-second-order-sqli">4. <strong>Second-order SQLi</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#4-second-order-sqli" class="hash-link" aria-label="Direct link to 4-second-order-sqli" title="Direct link to 4-second-order-sqli">​</a></h2>
+<ul>
+<li>L'injection se fait lors d'une première action (ex: inscription), mais est exploitée lors d’un second traitement (ex: affichage admin).</li>
+</ul>
+<hr>
+<h1>Particularités selon la base de données</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL<a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#mysql" class="hash-link" aria-label="Direct link to MySQL" title="Direct link to MySQL">​</a></h2>
+<ul>
+<li>Commentaires : <code>-- </code> ou <code>#</code></li>
+<li>Concaténation : <code>CONCAT()</code></li>
+<li>Délai : <code>SLEEP(5)</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL<a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#postgresql" class="hash-link" aria-label="Direct link to PostgreSQL" title="Direct link to PostgreSQL">​</a></h2>
+<ul>
+<li>Commentaires : <code>-- </code></li>
+<li>Concaténation : <code>||</code></li>
+<li>Délai : <code>pg_sleep(5)</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sql-server">SQL Server<a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#sql-server" class="hash-link" aria-label="Direct link to SQL Server" title="Direct link to SQL Server">​</a></h2>
+<ul>
+<li>Commentaires : <code>-- </code></li>
+<li>Concaténation : <code>+</code></li>
+<li>Délai : <code>WAITFOR DELAY '0:0:5'</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="oracle">Oracle<a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#oracle" class="hash-link" aria-label="Direct link to Oracle" title="Direct link to Oracle">​</a></h2>
+<ul>
+<li>Commentaires : <code>-- </code></li>
+<li>Concaténation : <code>||</code></li>
+<li>Délai : <code>dbms_pipe.receive_message('a',5)</code></li>
+</ul>
+<hr>
+<h1>Comment détecter le nombre de colonnes (UNION SELECT)</h1>
+<p>Une des premières étapes lors d’une SQLi avec <code>UNION</code> est de déterminer le nombre de colonnes dans la requête originale :</p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token string" style="color:rgb(195, 232, 141)">' ORDER BY 1-- </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token string" style="color:rgb(195, 232, 141)">'</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">ORDER</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">BY</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">2</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- </span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">' </span><span class="token keyword" style="font-style:italic">ORDER</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">BY</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">3</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- </span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Quand une erreur survient, le dernier nombre est trop élevé.</p>
+<p>Ensuite, on peut tester avec <code>UNION</code> :</p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token string" style="color:rgb(195, 232, 141)">' UNION SELECT NULL-- </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token string" style="color:rgb(195, 232, 141)">'</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">UNION</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">SELECT</span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">NULL</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token boolean" style="color:rgb(255, 88, 116)">NULL</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- </span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">' </span><span class="token keyword" style="font-style:italic">UNION</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">SELECT</span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">NULL</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token boolean" style="color:rgb(255, 88, 116)">NULL</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token boolean" style="color:rgb(255, 88, 116)">NULL</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- </span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Jusqu'à ne plus obtenir d'erreur → on a trouvé le bon nombre de colonnes.</p>
+<hr>
+<h1>Commentaires utiles pour masquer ou terminer les requêtes</h1>
+<ul>
+<li><code>--</code> (standard SQL)</li>
+<li><code>#</code> (MySQL)</li>
+<li><code>/* ... */</code> (multi-ligne)</li>
+</ul>
+<p>Exemples :</p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token string" style="color:rgb(195, 232, 141)">' OR 1=1-- </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token string" style="color:rgb(195, 232, 141)">'</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">OR</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># </span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">' </span><span class="token operator" style="color:rgb(137, 221, 255)">OR</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/* */</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h1>Contourner les WAF (Web Application Firewall)</h1>
+<p>Les WAF essaient de détecter les patterns suspects. Quelques techniques de contournement :</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-encodage">1. <strong>Encodage</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#1-encodage" class="hash-link" aria-label="Direct link to 1-encodage" title="Direct link to 1-encodage">​</a></h3>
+<ul>
+<li>URL encoding : <code>'</code> devient <code>%27</code></li>
+<li>Double encoding : <code>%2527</code> pour <code>%27</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-casse-ou-espacement">2. <strong>Casse ou espacement</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#2-casse-ou-espacement" class="hash-link" aria-label="Direct link to 2-casse-ou-espacement" title="Direct link to 2-casse-ou-espacement">​</a></h3>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">UnIoN</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">SeLeCt</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">UNION</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/**/</span><span class="token keyword" style="font-style:italic">SELECT</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-fonctions-alternatives">3. <strong>Fonctions alternatives</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#3-fonctions-alternatives" class="hash-link" aria-label="Direct link to 3-fonctions-alternatives" title="Direct link to 3-fonctions-alternatives">​</a></h3>
+<ul>
+<li><code>CONCAT()</code> → <code>CONCAT_WS()</code></li>
+<li><code>UNION</code> → <code>/*!UNION*/</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-utilisation-dexpressions-régulières-ou-char-coding">4. <strong>Utilisation d’expressions régulières ou char-coding</strong><a href="https://jordan-creyelman.github.io/mon-blog/2025/05/13/sqli#4-utilisation-dexpressions-r%C3%A9guli%C3%A8res-ou-char-coding" class="hash-link" aria-label="Direct link to 4-utilisation-dexpressions-régulières-ou-char-coding" title="Direct link to 4-utilisation-dexpressions-régulières-ou-char-coding">​</a></h3>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">SELECT</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">CHAR</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">65</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token number" style="color:rgb(247, 140, 108)">66</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token number" style="color:rgb(247, 140, 108)">67</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- au lieu de 'ABC'</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h1>Conclusion</h1>
+<p>Les <strong>SQL Injections</strong> restent une menace sérieuse en cybersécurité. Comprendre leurs mécanismes, leurs variantes selon les bases de données, et les techniques de détection est essentiel pour tout pentesteur ou développeur souhaitant sécuriser ses applications.</p>
+<blockquote>
+<p><strong>Bonnes pratiques</strong> :</p>
+<ul>
+<li>Toujours utiliser des requêtes préparées (prepared statements)</li>
+<li>Ne jamais faire confiance à l’entrée utilisateur</li>
+<li>Utiliser des WAF intelligents, mais ne jamais s’y reposer totalement</li>
+</ul>
+</blockquote>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://jordan-creyelman.github.io/mon-blog/welcome</id>
@@ -53,56 +170,6 @@
             <name>Sébastien Lorber</name>
             <uri>https://sebastienlorber.com</uri>
         </author>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long Blog Post]]></title>
-        <id>https://jordan-creyelman.github.io/mon-blog/long-blog-post</id>
-        <link href="https://jordan-creyelman.github.io/mon-blog/long-blog-post"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://github.com/yangshun</uri>
-        </author>
-        <category label="Hello" term="Hello"/>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://jordan-creyelman.github.io/mon-blog/first-blog-post</id>
-        <link href="https://jordan-creyelman.github.io/mon-blog/first-blog-post"/>
-        <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
-        </author>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://github.com/yangshun</uri>
-        </author>
-        <category label="Hola" term="Hola"/>
         <category label="Docusaurus" term="Docusaurus"/>
     </entry>
 </feed>
