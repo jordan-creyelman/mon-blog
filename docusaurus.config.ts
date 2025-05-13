@@ -5,6 +5,7 @@ module.exports = {
   organizationName: 'jordan-creyelman', // ✅ Nom d'utilisateur GitHub
   projectName: 'mon-blog', // ✅ Nom du repo GitHub
   trailingSlash: false,
+  deploymentBranch: 'gh-pages', 
 
   presets: [
     [
